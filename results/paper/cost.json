@@ -1,0 +1,8 @@
+{
+ "n_training_rows": 11449,
+ "train_seconds": 0.59,
+ "predict_ms": 1.85,
+ "update_us": 0.213,
+ "model_kib": 1054.0,
+ "python": "3.12.10"
+}

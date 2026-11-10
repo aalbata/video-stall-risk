@@ -1,0 +1,261 @@
+{
+ "selected": {
+  "signal": "stall_event",
+  "step": 0.5,
+  "floor": 0.0,
+  "mean_qoe_over_limits": 2.3614986630240535
+ },
+ "selected_overestimate": {
+  "signal": "overestimate",
+  "step": 0.5,
+  "floor": 0.0,
+  "mean_qoe_over_limits": 2.247870670821455
+ },
+ "ranking": [
+  {
+   "signal": "stall_event",
+   "step": 0.5,
+   "floor": 0.0,
+   "qoe_per_segment": 2.3615
+  },
+  {
+   "signal": "stall_event",
+   "step": 0.25,
+   "floor": 0.0,
+   "qoe_per_segment": 2.2412
+  },
+  {
+   "signal": "stall_time",
+   "step": 0.5,
+   "floor": 0.0,
+   "qoe_per_segment": 1.7081
+  },
+  {
+   "signal": "stall_event",
+   "step": 0.5,
+   "floor": -0.5,
+   "qoe_per_segment": 1.6645
+  },
+  {
+   "signal": "stall_time",
+   "step": 0.25,
+   "floor": 0.0,
+   "qoe_per_segment": 1.1457
+  },
+  {
+   "signal": "stall_event",
+   "step": 0.25,
+   "floor": -0.5,
+   "qoe_per_segment": 1.1264
+  },
+  {
+   "signal": "stall_event",
+   "step": 0.1,
+   "floor": 0.0,
+   "qoe_per_segment": 0.8172
+  },
+  {
+   "signal": "stall_event",
+   "step": 0.1,
+   "floor": -0.5,
+   "qoe_per_segment": 0.5306
+  },
+  {
+   "signal": "stall_time",
+   "step": 0.5,
+   "floor": -0.5,
+   "qoe_per_segment": 0.2279
+  },
+  {
+   "signal": "stall_time",
+   "step": 0.25,
+   "floor": -0.5,
+   "qoe_per_segment": -0.1942
+  },
+  {
+   "signal": "stall_time",
+   "step": 0.1,
+   "floor": 0.0,
+   "qoe_per_segment": -0.4038
+  },
+  {
+   "signal": "stall_time",
+   "step": 0.1,
+   "floor": -0.5,
+   "qoe_per_segment": -0.9855
+  }
+ ],
+ "ranking_overestimate": [
+  {
+   "signal": "overestimate",
+   "step": 0.5,
+   "floor": 0.0,
+   "qoe_per_segment": 2.2479
+  },
+  {
+   "signal": "overestimate",
+   "step": 0.25,
+   "floor": 0.0,
+   "qoe_per_segment": 1.8098
+  },
+  {
+   "signal": "overestimate",
+   "step": 0.1,
+   "floor": 0.0,
+   "qoe_per_segment": 1.7178
+  },
+  {
+   "signal": "overestimate",
+   "step": 0.25,
+   "floor": -0.5,
+   "qoe_per_segment": 1.7103
+  },
+  {
+   "signal": "overestimate",
+   "step": 0.5,
+   "floor": -0.5,
+   "qoe_per_segment": 1.5742
+  },
+  {
+   "signal": "overestimate",
+   "step": 0.1,
+   "floor": -0.5,
+   "qoe_per_segment": 1.4912
+  }
+ ],
+ "a_limit": {
+  "mean_fraction_by_limit_dev_mob": {
+   "0.002": 0.008381808458347528,
+   "0.005": 0.009392187314798453,
+   "0.01": 0.012444486581764355,
+   "0.02": 0.016513787294356746,
+   "0.04": 0.023002247107412905
+  },
+  "tolerance": 0.005,
+  "means_ok": false,
+  "per_trace_bound": {
+   "n_rows": 6900,
+   "n_violations": 0,
+   "largest_excess": 1.2836953722228372e-16
+  },
+  "met": false
+ },
+ "b_vs_robust": {
+  "by_limit": [
+   {
+    "limit": 0.002,
+    "dev_cv_rebuffer": 0.02390720951469139,
+    "dev_cv_robust_rebuffer": 0.025438454796739646,
+    "dev_cv_qoe": 3.0896795250751157,
+    "dev_cv_robust_qoe": 2.984381077868958,
+    "dev_cv_bitrate": 9.837996681806139,
+    "dev_cv_robust_bitrate": 10.251310161065163,
+    "dev_cv_met": true,
+    "dev_mob_rebuffer": 0.029002689790530247,
+    "dev_mob_robust_rebuffer": 0.033477121636395935,
+    "dev_mob_qoe": 1.129701197261334,
+    "dev_mob_robust_qoe": 0.8992694956020892,
+    "dev_mob_bitrate": 8.990748196203329,
+    "dev_mob_robust_bitrate": 10.099334268094998,
+    "dev_mob_met": true,
+    "met_in_both": true
+   },
+   {
+    "limit": 0.005,
+    "dev_cv_rebuffer": 0.025336281836515772,
+    "dev_cv_robust_rebuffer": 0.025438454796739646,
+    "dev_cv_qoe": 2.8694255820191343,
+    "dev_cv_robust_qoe": 2.984381077868958,
+    "dev_cv_bitrate": 10.04176010361562,
+    "dev_cv_robust_bitrate": 10.251310161065163,
+    "dev_cv_met": false,
+    "dev_mob_rebuffer": 0.03257131802263689,
+    "dev_mob_robust_rebuffer": 0.033477121636395935,
+    "dev_mob_qoe": 0.8414532778588991,
+    "dev_mob_robust_qoe": 0.8992694956020892,
+    "dev_mob_bitrate": 9.415589707010273,
+    "dev_mob_robust_bitrate": 10.099334268094998,
+    "dev_mob_met": false,
+    "met_in_both": false
+   },
+   {
+    "limit": 0.01,
+    "dev_cv_rebuffer": 0.029989136070609577,
+    "dev_cv_robust_rebuffer": 0.025438454796739646,
+    "dev_cv_qoe": 2.553287225402657,
+    "dev_cv_robust_qoe": 2.984381077868958,
+    "dev_cv_bitrate": 10.667694689892851,
+    "dev_cv_robust_bitrate": 10.251310161065163,
+    "dev_cv_met": false,
+    "dev_mob_rebuffer": 0.03542504858792398,
+    "dev_mob_robust_rebuffer": 0.033477121636395935,
+    "dev_mob_qoe": 0.6404800622851659,
+    "dev_mob_robust_qoe": 0.8992694956020892,
+    "dev_mob_bitrate": 9.997002181801035,
+    "dev_mob_robust_bitrate": 10.099334268094998,
+    "dev_mob_met": false,
+    "met_in_both": false
+   },
+   {
+    "limit": 0.02,
+    "dev_cv_rebuffer": 0.03393150972171084,
+    "dev_cv_robust_rebuffer": 0.025438454796739646,
+    "dev_cv_qoe": 2.269991960417197,
+    "dev_cv_robust_qoe": 2.984381077868958,
+    "dev_cv_bitrate": 11.163195125845487,
+    "dev_cv_robust_bitrate": 10.251310161065163,
+    "dev_cv_met": false,
+    "dev_mob_rebuffer": 0.04321934009939705,
+    "dev_mob_robust_rebuffer": 0.033477121636395935,
+    "dev_mob_qoe": -0.04432783298542951,
+    "dev_mob_robust_qoe": 0.8992694956020892,
+    "dev_mob_bitrate": 10.827836344759,
+    "dev_mob_robust_bitrate": 10.099334268094998,
+    "dev_mob_met": false,
+    "met_in_both": false
+   },
+   {
+    "limit": 0.04,
+    "dev_cv_rebuffer": 0.039818327410990825,
+    "dev_cv_robust_rebuffer": 0.025438454796739646,
+    "dev_cv_qoe": 1.025109022206163,
+    "dev_cv_robust_qoe": 2.984381077868958,
+    "dev_cv_bitrate": 11.420055497729438,
+    "dev_cv_robust_bitrate": 10.251310161065163,
+    "dev_cv_met": false,
+    "dev_mob_rebuffer": 0.05105061115926137,
+    "dev_mob_robust_rebuffer": 0.033477121636395935,
+    "dev_mob_qoe": -1.9038589982456253,
+    "dev_mob_robust_qoe": 0.8992694956020892,
+    "dev_mob_bitrate": 11.194536412750415,
+    "dev_mob_robust_bitrate": 10.099334268094998,
+    "dev_mob_met": false,
+    "met_in_both": false
+   }
+  ],
+  "met": true
+ },
+ "c_vs_fixed": {
+  "limit_from_source": 0.002,
+  "margin_from_source": 0.0,
+  "online_qoe_dev_mob": 1.129701197261334,
+  "fixed_qoe_dev_mob": -6.352399366424449,
+  "met": true
+ },
+ "d_signal_comparison": {
+  "dev_cv": {
+   "stall_signal_best_qoe": 3.0896795250751157,
+   "overestimate_signal_best_qoe": 3.8168125043775865
+  },
+  "dev_mob": {
+   "stall_signal_best_qoe": 1.129701197261334,
+   "overestimate_signal_best_qoe": 1.710256113936836
+  }
+ },
+ "n_playback": {
+  "dev_cv": 53,
+  "dev_mob": 35,
+  "dev_mob_calibration": 4
+ },
+ "pass": false
+}

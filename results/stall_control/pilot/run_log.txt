@@ -1,0 +1,10 @@
+53 development traces loaded in 16s; 120 variants
+dev_cv/f0: train traces 42, training rows 11280, playback 11, calibration 0, 376s
+dev_cv/f1: train traces 42, training rows 11361, playback 11, calibration 0, 460s
+dev_cv/f2: train traces 42, training rows 11764, playback 11, calibration 0, 279s
+dev_cv/f3: train traces 43, training rows 12400, playback 10, calibration 0, 222s
+dev_cv/f4: train traces 43, training rows 12435, playback 10, calibration 0, 235s
+dev_mob/f0: train traces 14, training rows 3951, playback 35, calibration 4, 932s
+finished in 42.0 min
+
+[exited with code 0]

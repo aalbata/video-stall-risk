@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Managing Throughput Overestimation Risk for Video Streaming on Changing Cellular Networks, code and results"
+version: 1.0.0
+date-released: 2026-11-08
+license: MIT
+authors:
+  - family-names: "Al Bataineh"
+    given-names: "Ali"
+    orcid: "https://orcid.org/0000-0001-9530-7950"
+  - family-names: "Bouchahma"
+    given-names: "Majed"
+  - family-names: "Abou Tabl"
+    given-names: "Ashraf"
+  - family-names: "Gdeisat"
+    given-names: "Munther"
+  - family-names: "Moumouni"
+    given-names: "Yacouba"

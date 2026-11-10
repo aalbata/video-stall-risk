@@ -1,0 +1,59 @@
+{
+ "seed": 20261108,
+ "limits": [
+  0.002,
+  0.005,
+  0.01,
+  0.02,
+  0.04
+ ],
+ "levels": [
+  0.05,
+  0.1,
+  0.2,
+  0.3,
+  0.4
+ ],
+ "steps": [
+  0.1,
+  0.25,
+  0.5
+ ],
+ "floors": [
+  -0.5,
+  0.0
+ ],
+ "fixed_margins": [
+  -0.25,
+  0.0,
+  0.1,
+  0.2,
+  0.3,
+  0.4,
+  0.5,
+  0.6,
+  0.8,
+  1.0,
+  1.25,
+  1.5
+ ],
+ "n_folds": 5,
+ "train_share": 0.75,
+ "n_variants": 120,
+ "provenance": {
+  "amendments_sha256": "062f49c9d01a40c3c2751a517a75960cbafd683a65b691c3cc73e9733b4fa0df",
+  "partition_sha256": "c02400bdc1f25227055b3c4dc44bb8b56f741b7230e7ab1f274f3a09e7c4b07e",
+  "stall_control_py_sha256": "c49d8c26f738bcdb4ae71ae74249334639e71e9b87270fe413466b224685fcdb",
+  "has_py_sha256": "960c8a86ab8e9fb2a0d5f1640a8011f4be58bfee3f7b8f67be4eaa8a8b574041",
+  "run_stall_pilot_py_sha256": "af5793439dee9557a7def8abc7f21c1100cdeba7a5dc24bd45bd9fd8e094bc40"
+ },
+ "environment": {
+  "host": "RKW-P-H00655335",
+  "python": "3.12.10",
+  "numpy": "2.5.2",
+  "pandas": "3.0.5",
+  "scikit_learn": "1.9.0",
+  "n_jobs": 6
+ },
+ "first_launch_utc": "2026-11-08T12:02:31Z"
+}
