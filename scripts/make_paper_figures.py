@@ -64,7 +64,7 @@ def gradient_box(ax, x, y, w, h, kind: str, text: str, rounded: float = 1.0) -> 
     im = ax.imshow(np.linspace(0, 1, 64)[:, None], extent=(x, x + w, y, y + h), origin="lower",
                    cmap=cmap, aspect="auto", zorder=1)
     im.set_clip_path(box)
-    ax.text(x + w / 2, y + h / 2, text, ha="center", va="center", color="black", fontsize=8, zorder=4)
+    ax.text(x + w / 2, y + h / 2, text, ha="center", va="center", color="black", fontsize=7, zorder=4)
 
 
 def diamond(ax, cx, cy, w, h, text: str) -> None:
@@ -76,7 +76,7 @@ def diamond(ax, cx, cy, w, h, text: str) -> None:
     im = ax.imshow(np.linspace(0, 1, 64)[:, None], extent=(cx - w / 2, cx + w / 2, cy - h / 2, cy + h / 2),
                    origin="lower", cmap=cmap, aspect="auto", zorder=1)
     im.set_clip_path(poly)
-    ax.text(cx, cy, text, ha="center", va="center", color="black", fontsize=8, zorder=4)
+    ax.text(cx, cy, text, ha="center", va="center", color="black", fontsize=7, zorder=4)
 
 
 def arrow(ax, a, b, style="arc3,rad=0") -> None:
@@ -85,26 +85,28 @@ def arrow(ax, a, b, style="arc3,rad=0") -> None:
 
 
 def figure_method(png) -> None:
-    fig, ax = plt.subplots(figsize=(WIDTH, 92.0 * MM))
+    fig, ax = plt.subplots(figsize=(WIDTH, 100.0 * MM))
+    fig.subplots_adjust(left=0, right=1, bottom=0, top=1)
     ax.set_xlim(0, 119)
-    ax.set_ylim(0, 92)
+    ax.set_ylim(0, 100)
     ax.set_axis_off()
-    x, w = 1.0, 72.0
+    x, w = 1.0, 68.0
     cx = x + w / 2
-    gradient_box(ax, x, 83, w, 8, "terminal", "Request for the next video segment", rounded=3.0)
-    gradient_box(ax, x, 69, w, 10, "process", "Model predicts segment throughput\nfrom radio readings and recent segments")
-    gradient_box(ax, x, 55, w, 9, "process", "Estimate = prediction × exp(−margin)")
-    gradient_box(ax, x, 41, w, 9, "process", "Model predictive control chooses the bitrate")
-    gradient_box(ax, x, 27, w, 9, "process", "Download segment, measure throughput")
-    diamond(ax, cx, 14.5, 60, 16, "Was the estimate above the\nmeasured throughput?")
-    gradient_box(ax, 84, 73, 34, 11, "highlight", "Service sets\nthe level")
-    gradient_box(ax, 84, 40, 34, 21, "decision", "Yes: margin up by\nstep × (1 − level)\n\nNo: margin down by\nstep × level")
-    for y0, y1 in ((83, 79), (69, 64), (55, 50), (41, 36), (27, 22.5)):
+    rx, rw = 79.0, 39.0
+    rc = rx + rw / 2
+    gradient_box(ax, x, 89, w, 9, "terminal", "Request for the next video segment", rounded=3.0)
+    gradient_box(ax, x, 73, w, 12, "process", "Model predicts the throughput\nof the next segment")
+    gradient_box(ax, x, 59, w, 9, "process", "Estimate = prediction × exp(−margin)")
+    gradient_box(ax, x, 43, w, 11, "process", "Model predictive control\nchooses the bitrate")
+    gradient_box(ax, x, 29, w, 9, "process", "Download segment, measure throughput")
+    diamond(ax, cx, 13, 66, 20, "Was the estimate above\nthe measured throughput?")
+    gradient_box(ax, rx, 77, rw, 12, "highlight", "Service sets\nthe level")
+    gradient_box(ax, rx, 44, rw, 24, "decision", "Yes: margin up by\nstep × (1 − level)\n\nNo: margin down by\nstep × level")
+    for y0, y1 in ((89, 85), (73, 68), (59, 54), (43, 38), (29, 23)):
         arrow(ax, (cx, y0), (cx, y1))
-    arrow(ax, (101, 73), (101, 61))
-    arrow(ax, (cx + 30, 14.5), (101, 40), style="angle,angleA=0,angleB=90,rad=0")
-    arrow(ax, (84, 59.5), (73, 59.5))
-    ax.text(78.5, 61, "new\nmargin", ha="center", va="bottom", fontsize=8)
+    arrow(ax, (rc, 77), (rc, 68))
+    arrow(ax, (cx + 33, 13), (rc, 44), style="angle,angleA=0,angleB=90,rad=0")
+    arrow(ax, (rx, 63.5), (x + w, 63.5))
     save(fig, "fig1", png)
 
 
